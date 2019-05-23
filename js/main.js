@@ -1,22 +1,95 @@
-(function($){
-	"use strict";
+//<!--/*刘涛qq:2814063673*/-->
+;(function () {
+	
+	'use strict';
 
-	$(window).load(function() {
-		var $container = $('#fh5co-projects-feed'),
-		containerWidth = $container.outerWidth();
+//<!--/*刘涛qq:2814063673*/-->	
+	var isiPad = function(){
+		return (navigator.platform.indexOf("iPad") != -1);
+	};
 
-		$container.masonry({
-			itemSelector : '.fh5co-project',
-			columnWidth: function( containerWidth ) {
-				if( containerWidth <= 330 ) {
-					return 310;
-				} else {
-					return 330;
-				}
-			},
-
-			isAnimated: !Modernizr.csstransitions
+	var isiPhone = function(){
+	    return (
+			(navigator.platform.indexOf("iPhone") != -1) || 
+			(navigator.platform.indexOf("iPod") != -1)
+	    );
+	};
+//<!--/*刘涛qq:2814063673*/-->
+	var offCanvass = function() {
+		$('body').on('click', '.js-fh5co-menu-btn, .js-fh5co-offcanvass-close', function(){
+			$('#fh5co-offcanvass').toggleClass('fh5co-awake');
 		});
+	};
+//<!--/*刘涛qq:2814063673*/-->
+	var mobileMenuOutsideClick = function() {
+		$(document).click(function (e) {
+	    var container = $("#fh5co-offcanvass, .js-fh5co-menu-btn");
+	    if (!container.is(e.target) && container.has(e.target).length === 0) {
+	    	if ( $('#fh5co-offcanvass').hasClass('fh5co-awake') ) {
+	    		$('#fh5co-offcanvass').removeClass('fh5co-awake');
+	    	}
+	    }
+		});
+
+		$(window).scroll(function(){
+			if ( $(window).scrollTop() > 500 ) {
+				if ( $('#fh5co-offcanvass').hasClass('fh5co-awake') ) {
+		    		$('#fh5co-offcanvass').removeClass('fh5co-awake');
+		    	}
+	    	}
+		});
+	};
+
+//<!--/*刘涛qq:2814063673*/-->
+	
+	var magnifPopup = function() {
+		$('.image-popup').magnificPopup({
+			type: 'image',
+			removalDelay: 300,
+			mainClass: 'mfp-with-zoom',
+			titleSrc: 'title',
+			gallery:{
+				enabled:true
+			},
+			zoom: {
+				enabled: true, 
+
+				duration: 300, 
+				easing: 'ease-in-out', 
+
+				opener: function(openerElement) {
+//<!--/*刘涛qq:2814063673*/-->
+				return openerElement.is('img') ? openerElement : openerElement.find('img');
+				}
+			}
+		});
+	};
+
+
+
+	var animateBoxWayPoint = function() {
+
+		if ($('.animate-box').length > 0) {
+			$('.animate-box').waypoint( function( direction ) {
+
+				if( direction === 'down' && !$(this).hasClass('animated') ) {
+					$(this.element).addClass('bounceIn animated');
+				}
+
+			} , { offset: '75%' } );
+		}
+
+	};
+
+	
+
+	
+	$(function(){
+		magnifPopup();
+		offCanvass();
+		mobileMenuOutsideClick();
+		animateBoxWayPoint();
 	});
 
-})(window.jQuery);
+
+}());

@@ -1,12 +1,5 @@
 @charset "UTF-8";
-
-/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
-*/
-
+/*刘涛qq:2814063673*/
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -35,7 +28,7 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
 }
-
+/*刘涛qq:2814063673*/
 @-webkit-keyframes bounce {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -124,7 +117,7 @@ Copyright (c) 2015 Daniel Eden
   animation-name: flash;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+/*刘涛qq:2814063673*/
 
 @-webkit-keyframes pulse {
   from {
@@ -403,7 +396,7 @@ Copyright (c) 2015 Daniel Eden
   animation-name: tada;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+/*刘涛qq:2814063673*/
 
 @-webkit-keyframes wobble {
   from {
@@ -1175,10 +1168,8 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);*/
-    -webkit-transform: translate3d(0, -50px, 0);
-    transform: translate3d(0, -50px, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
 
   to {
@@ -1191,10 +1182,8 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);*/
-    -webkit-transform: translate3d(0, -50px, 0);
-    transform: translate3d(0, -50px, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
 
   to {
@@ -1245,10 +1234,8 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);*/
-    -webkit-transform: translate3d(-50px, 0, 0);
-    transform: translate3d(-50px, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 
   to {
@@ -1261,10 +1248,8 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);*/
-    -webkit-transform: translate3d(-50px, 0, 0);
-    transform: translate3d(-50px, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 
   to {
@@ -1315,10 +1300,8 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeInRight {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);*/
-    -webkit-transform: translate3d(50px, 0, 0);
-    transform: translate3d(50px, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
 
   to {
@@ -1331,10 +1314,8 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);*/
-    -webkit-transform: translate3d(50px, 0, 0);
-    transform: translate3d(50px, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
 
   to {
@@ -3285,4 +3266,4 @@ Copyright (c) 2015 Daniel Eden
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
-}
+}/*刘涛qq:2814063673*/
